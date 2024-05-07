@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/toolbar_title_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to_do_list"
+                android:textColor="@color/text_color" />
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        app:fabCradleVerticalOffset="8dp"
+        app:fabCradleMargin="8dp"
+        android:background="@color/bottom_nav_bg">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="0dp"
+            app:itemActiveIndicatorStyle="@null"
+            app:itemBackground="@null"
+            app:itemIconSize="25dp"
+            app:itemIconTint="@color/selector_btn_nav_icon"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/nav_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/toolbar"
+        android:src="@drawable/ic_add"
+        android:tintMode="@color/white"
+        app:layout_anchor="@id/bottomAppBar" />
+
+    <include
+        android:id="@+id/content"
+        layout="@layout/content_home"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

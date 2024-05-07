@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="toolbar">#5D9CEC</color>
+    <color name="text_color">@color/white</color>
+    <color name="activity_bg_color">#DFECDB</color>
+    <color name="bottom_nav_bg">#FFFFFF</color>
+    <color name="non_checked">#C8C9CB</color>
+
+
+</resources>

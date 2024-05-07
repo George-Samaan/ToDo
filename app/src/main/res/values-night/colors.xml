@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="activity_bg_color">#060E1E</color>
+    <color name="text_color">#060E1E</color>
+    <color name="toolbar">#5D9CEC</color>
+    <color name="bottom_nav_bg">#141922</color>
+    <color name="non_checked">#C8C9CB</color>
+
+
+
+
+
+
+</resources>
